@@ -1,0 +1,320 @@
+*{
+    box-sizing: border-box;
+}
+body{
+    margin: 0;
+    height: 100%;
+}
+/* header */
+.header{
+    padding: 15px 0;
+    background-color: #fff;
+}
+.header-content{
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+}
+.logo-content{
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    width: 80%;
+}
+.emp-text{
+    font-family: 'Roboto', sans-serif;
+    letter-spacing: 0;
+    color: #82a70c;
+    text-transform: capitalize;
+}
+.emp-payroll{
+    color: #42515f;
+}
+/* form */
+.form-content{
+    min-height: calc(100% - 80px);
+    background-color: #f7f7f7;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.form{
+    width: 65%;
+    padding: 44px 60px;
+    background: #fff 0% 0% no-repeat padding-box;
+    box-shadow: 0px 3px 6px #00000029;
+    border: 1px solid #f5f5f5;
+    border-radius: 8px;
+    opacity: 1;
+}
+.form-head{
+    font: normal normal bold 24px/37px 'Roboto';
+    letter-spacing: 0px;
+    color: #42515f;
+    text-transform: capitalize;
+    opacity: 1;
+    padding-bottom: 20px;
+}
+.row-content{
+    display: flex;
+    flex-direction: row;
+    margin-bottom: 10px;
+    align-items: center;
+}
+.label{
+    min-width: 140px;
+}
+label{
+    padding: 12px 12px 12px 0;
+    display: inline-block;
+}
+.text{
+    font-size: 16px;
+    color: #42515f;
+    opacity: 1;
+    font-family: 'Roboto', sans-serif;
+}
+.input{
+    width: 100%;
+    padding: 12px;
+    border: 1px solid #ccc;
+    border-radius: 4px;
+    resize: vertical;
+}
+/* profile */
+.profile-radio-content{
+    display: flex;
+    flex-direction: row;
+}
+.profile-radio-content > label{
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+}
+.profile{
+    width: 40px;
+    border-radius: 50%;
+    margin-left: 12px;
+}
+/* start date */
+select{
+    padding: 12px;
+    border: 1px solid #ccc;
+    border-radius: 4px;
+    resize: vertical;
+    font: normal normal normal 16px 'Roboto';
+    letter-spacing: 0;
+    color: #42515f;
+    background-color: transparent;
+}
+/* buttons */
+.buttonParent{
+    display: flex;
+    margin-bottom: 10px;
+    justify-content: space-between;
+    margin-top: 20px;   
+}
+.button{
+    font-size: 15px;
+    font-family: 'Roboto';
+    letter-spacing: 0;
+    color: #42515f;
+    opacity: 1;
+    background: #E2E2E2 0% 0% no-repeat padding-box;
+    border: none;
+    font-weight: 400;
+    min-width: 100px;
+    padding: 5px;
+    border: 1px solid #707070;
+    border-radius: 5px;
+    cursor: pointer;
+    text-align: center;
+    margin-top: 2px;
+    width: 100px;
+    height: 30px;
+    transition: 0.3s ease-out;
+}
+.submitButton{
+    margin-right: 10px;
+    top: 915px;
+    left: 994px;
+    
+}
+.resetButton{
+    top: 915px;
+    left: 1194px;
+}
+.cancelButton{
+    text-decoration: none;
+    text-align: center;
+    top: 915px;
+    left: 546px;
+}
+/* hover button */
+.cancelButton:hover, .resetButton:hover{
+    background-color: #707070;
+    color: #fff;
+}
+.submitButton:hover{
+    background-color: #82a70c;
+    color: #fff;
+}
+/* error output */
+error-output{
+    margin-left: 10px;
+    font-size: 12px;
+    font-style: italic;
+    color: red;
+}
+/* media query */
+@media only screen and (max-wdth: 960px){
+    .profile-radio-content{
+        flex-flow: wrap;
+        margin: 0;
+    }
+    .cancelButton{
+        margin-left: 0;
+    }
+    .form{
+        width: 85%;
+        padding: 44px 20px;
+    }
+}
+@media screen and (max-width: 600px) {
+    .form{
+        margin: 10px;
+    }
+    .row{
+        flex-direction: column;
+    }
+    .submitButton{
+        justify-content: flex-start;
+        margin-left: 10px;
+    }
+    .profile-radio-content{
+        flex-flow: wrap;
+        margin: 0;
+    }
+    .submit-reset{
+        width: 100%;
+        display: flex;
+        flex-grow: 1;
+        flex-direction: row-reverse;
+        justify-content: space-between;
+        margin-bottom: 20px;
+    }
+    .buttonParent{
+        flex-direction: column-reverse;
+        align-items: flex-start;
+    }
+}
+/* main content of emp payroll display */
+.main-content{
+    display: flex;
+    flex-direction: column;
+    min-height: calc(100vh-80px);
+    background-color: #f7f7f7;
+    padding: 30px 0 10px;
+    box-sizing: border-box;
+}
+.header-contents{
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: center;
+    width: 80%;
+    margin: 0 auto;
+    padding-bottom: 25px;
+}
+.emp-detail-text{
+    font: normal normal 24px/25px 'Roboto';
+    letter-spacing: 0px;
+    color: #42515f;
+    opacity: 1;
+}
+.emp-count{
+    background-color: #82a70c;
+    color: #fff;
+    border-radius: 100px/50px;
+    font-size: 16px;
+    width: 50px;
+    text-align: center;
+    display: inline-block;
+}
+.add-icon{
+    margin-top: 10px !important;
+}
+.add-button{
+    font: normal normal normal 22px/29px 'Roboto';
+    font-size: 18px;
+    letter-spacing: 0px;
+    color: #fff;
+    opacity: 1;
+    background: #82a70c 0% 0% no-repeat padding-box;
+    border: none;
+    border-radius: 5px;
+    padding: 5px 18px;
+    outline: none;
+    cursor: pointer;
+    text-decoration: none;
+    align-content: center;
+}
+/* table */
+.table-main{
+    width: 80%;
+    margin: 0 auto;
+    overflow: auto;
+}
+.table{
+    width: 100%;
+    border-collapse: collapse;
+    border-spacing: 0 15px;
+    min-width: 800px;
+}
+td,th{
+    text-align: left;
+    padding: 5px 8px;
+}
+th{
+    background: #42515f 0% 0% no-repeat padding-box;
+    /* border-radius: 3px 3px 0 0; */
+    font: normal normal 14px/24px 'Roboto';
+    font-weight: 500;
+    text-align: left;
+    letter-spacing: 0;
+    color: #fff;
+    text-transform: uppercase;
+    opacity: 1; 
+    border: 0px solid #ddd;
+}
+tr:not(:first-child) {
+    background: #fff 0% 0% no-repeat padding-box;
+    border: 1px solid #e3e3e3;
+    border-radius: 3px;
+}
+td{
+    font: normal normal normal 12px/21px 'Roboto';
+    letter-spacing: 0;
+    color: #3d3d3d;
+    opacity: 1;
+}
+td:first-child{
+    display: flex;
+    align-items: center;
+}
+td img:first-child{
+    margin-right: 10px;
+}
+td img{
+    cursor: pointer;
+}
+.dept-label{
+    background-color: #e9fea5;
+    border-radius: 13px;
+    width: fit-content;
+    padding: 1px 7px;
+    text-align: center;
+    display: inline-block;
+    margin-bottom: 8px;
+}
